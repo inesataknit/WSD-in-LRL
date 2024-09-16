@@ -1,3 +1,5 @@
+#RF& SVM Implimentation for the Bachelor thesis Word sense Disambiguation in Low resource languages by Ines ataknit
+
 # Libraries Importation
 import pandas as pd
 from sklearn.metrics import classification_report, accuracy_score, precision_recall_fscore_support
