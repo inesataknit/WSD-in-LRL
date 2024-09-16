@@ -9,10 +9,9 @@ This project applies two supervised machine learning models, **Random Forest** a
 3. **Majority Baseline**: A simple reference model that always predicts the most frequent word sense from the training data.
 
 ### **Project Structure**
-- **/data**: Contains the dataset used for training and testing (optional depending on whether you can share the data).
 - **/src**: Contains the Python code for loading the dataset, training the models, and evaluating their performance.
-  - **`final_implementation.py`**: Main implementation file that trains Random Forest, SVM, and evaluates against the Majority Baseline.
-- **/results**: Contains the evaluation results, metrics, and comparison charts.
-- **/figures**: Visualizations comparing model performance across accuracy, precision, recall, and F1-score.
+  - **`WSD_Implementation.py`**: Main implementation file that trains Random Forest, SVM, and evaluates against the Majority Baseline.
+- **/evaluation_metrics_all.csv**: Contains the evaluation results and metrics table.
+- **/Figure.png**: Visualizations comparing model performance across accuracy, precision, recall, and F1-score.
 
 
