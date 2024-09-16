@@ -15,8 +15,4 @@ This project applies two supervised machine learning models, **Random Forest** a
 - **/results**: Contains the evaluation results, metrics, and comparison charts.
 - **/figures**: Visualizations comparing model performance across accuracy, precision, recall, and F1-score.
 
-### **How to Run the Project**
-1. Clone the repository:
-   ```bash
-   git clone <repository-link>
-   cd <repository-folder>
+
