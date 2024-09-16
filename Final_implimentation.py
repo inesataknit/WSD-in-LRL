@@ -28,7 +28,7 @@ def load_and_preprocess_data(train_file, test_file):
     test_df['Sense'] = label_encoder.transform(test_df['Sense'])
 
     # Vectorize the text data
-    vectorizer = CountVectorizer(stop_words='english')  # Use stop words if needed
+    vectorizer = CountVectorizer(stop_words='english')
     X_train = vectorizer.fit_transform(train_df['Text'])
     X_test = vectorizer.transform(test_df['Text'])
 
@@ -149,10 +149,8 @@ for train_file, test_file in zip(train_files, test_files):
         'SVM_recall': svm_recall,
         'SVM_f1': svm_f1,
     }
-
-    # Append the metrics dictionary to the list
-    all_metrics_dfs.append(pd.DataFrame([metrics]))
-
+# Append the metrics dictionary to the list
+all_metrics_dfs.append(pd.DataFrame([metrics]))
 
 # Concatenate all metrics dataframes into a single dataframe
 all_metrics_df = pd.concat(all_metrics_dfs, ignore_index=True)
@@ -227,5 +225,4 @@ sns.barplot(x='Metric', y='value', hue='variable', data=avg_metrics_melted)
 plt.title('Average Performance Metrics: Majority Baseline vs Random Forest vs SVM')
 plt.ylabel('Average Score')
 plt.xlabel('Metric')
-plt.ylim(0, 1)  # Assuming metrics are in the range [0, 1]
-plt.show()
+plt.ylim(0, 1) 
