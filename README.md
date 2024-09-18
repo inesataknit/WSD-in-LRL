@@ -12,6 +12,6 @@ This project applies two supervised machine learning models, **Random Forest** a
 - **/src**: Contains the Python code for loading the dataset, training the models, and evaluating their performance.
   - **`WSD_Implementation.py`**: Main implementation file that trains Random Forest, SVM, and evaluates against the Majority Baseline.
 - **/evaluation_metrics_all.csv**: Contains the evaluation results and metrics table.
-- **/Figure.png**: Visualizations comparing model performance across accuracy, precision, recall, and F1-score.
+- **/Figure.png**: Visualizations comparing model performance.
 
 
